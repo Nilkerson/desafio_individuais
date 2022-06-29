@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+     * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Nunito', sans-serif;
+            color: rgb(70, 69, 69);
+        }
+        
+        p {
+            font-size: 13px
+        }
+
+        header {
+            background-color: white;
+            padding: 5px 50px;
+        }
+        
+        header > nav {
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            padding: 5px;
+        }
+
+        header > nav > menu,a{
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        header > nav > menu,a:hover {
+            color: rgb(59, 14, 223);
+        }
+
+        .botoes {
+            padding: 20px 20px;
+            gap: 10px;
+            display: flex;
+        }
+
+        .botao1{
+            color: gray;
+            padding: 10px 43.29px;
+            border: solid 1px gray;
+            border-radius: 5px;
+        }
+
+        .botao1:hover {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+            transition: .2s;
+        }
+
+        .botao2 {
+            color: white;
+            background-color: gray;
+            padding: 10px 27px;
+            border: solid 1px gray;
+            border-radius: 5px;
+        }
+
+        .botao2:hover {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+            transition: .2s;
+        }
+
+        main {
+            max-width: 1000px;
+            min-width: 320px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: stretch;
+            gap: 10px;
+        }
+
+        .sectionTop {
+            height: 500px auto;
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: baseline;
+        }
+
+        .sectionLeft {
+            font-size: 4em;
+            height: 500px;
+            min-width: 320px;
+            max-width: 320px;
+            padding-left: 20px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .acao1,.acao2 {
+            background-color: rgb(59, 14, 223);
+            color: white;
+            padding: 10px 43.29px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .imagens {
+            height: 500px;
+            max-width: 500px;
+            min-width: 320px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+
+        .imagem1 {
+            background-color: gray;
+            border-radius: 7px;
+            height: 235px;
+            width: 235px;
+            /*max-height: 300px;
+            min-height: 160px;
+            max-width: 300px;
+            min-width: 185px;*/
+            /*flex: 1 1 185px;*/
+        }
+
+        .imagem2 {
+            background-color: gray;
+            border-radius: 7px;
+            height: 235px;
+            width: 235px;
+            /*max-height: 300px;
+            min-height: 228px;
+            max-width: 300px;
+            min-width: 185px;*/
+            /*flex: 1 1 185px;*/
+        }
+
+        .imagem3 {
+            background-color: gray;
+            border-radius: 7px;
+            height: 235px;
+            width: 235px;
+            /*max-height: 300px;
+            min-height: 270px;
+            max-width: 300px;
+            min-width: 200px;*/
+            /*flex: 1 1 200px;*/
+        }
+
+        .imagem4 {
+            background-color: gray;
+            border-radius: 7px;
+            height: 235px;
+            width: 235px;
+            /*max-height: 300px;
+            min-height: 118px;
+            max-width: 300px;
+            min-width: 200px;*/
+            /*flex: 1 1 200px;*/
+        }
+
+        .sectionCenter {
+            height: auto;
+            width: auto;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            justify-content: space-around;
+        }
+
+        .sectionCenter > div > h2 {
+            font-size: 3em;
+            width: 300px;
+        }
+
+        .sectionBottom {
+            width: auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .sectionBottom > .divBottom {
+            width: 200px;
+        }

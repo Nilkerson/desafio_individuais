@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+	padding: 0px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 100px 100% 20px;
+    grid-template-areas: "h h h" "m m m" "f f f";
+    max-width: 100%;
+}
+
+.header {
+    grid-area: h;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px auto;
+}
+
+.logo-e-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    height: 35px;
+    padding: 5px;
+}
+
+.menu {
+    display: flex;
+    gap: 35px;
+}
+
+header > nav > .logo-e-menu > .menu > a {
+    text-decoration: none;
+    color: gray;
+    padding: 5px;
+}
+
+.botoes-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    height: 35px;
+    padding: 5px;
+}
+
+.botao1-nav {
+    color: gray;
+    padding: 7px 15px;
+    border: none;
+}
+
+.botao2-nav {
+    color: gray;
+    padding: 7px 15px;
+    border-radius: 11px;
+    border: 2px solid gray;
+}
+
+/*@media (max-width: 800px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}*/
+
+.main {
+    grid-area: m;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 85% 15%;
+    grid-template-areas: "text1 img" "text2 img";
+    max-width: 870px;
+    min-width: 590px;
+    margin: auto;
+    padding: 20px;
+}
+
+.text1 {
+    grid-area: text1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 40% 10%;
+    grid-template-areas: "h1" "p" "btn";
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    }
+
+h1 {
+    grid-area: h1;
+    background-color: violet;
+    font-size: 3em;
+}
+
+p {
+    grid-area: p;
+    background-color: violet;
+}
+
+.botao-saiba-mais {
+    grid-area: btn;
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 120px;
+    border-radius: 11px;
+}
+
+.text2 {
+    grid-area: text2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.patrocionio {
+    background-color: white;
+}
+
+.img {
+    grid-area: img;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.footer {
+    grid-area: f;
+    height: 10vh;
+    width: 100vw;
+}
